@@ -15,7 +15,7 @@ public class Funcionalidad {
 
     // COMPORTAMIENTOS
     static public void createUser(){
-        String [] user = new String[3];
+        String [] user = new String[4];
 
         System.out.print("Ingrese su nombre: ");
         userName = sc.nextLine();
@@ -35,6 +35,7 @@ public class Funcionalidad {
             System.out.print("Ingresa los pasos del día " + i + ": ");
             int pasos = sc.nextInt();
             cantidadpasos += pasos;
+
         }
 
         profit = cantidadpasos / cantidadias;
@@ -72,7 +73,7 @@ public class Funcionalidad {
         String username = sc.nextLine();
 
         LocalDateTime now = LocalDateTime.now();
-        System.out.println("Usuario" + username + "ha iniciado seción" + now);
+        System.out.println("Usuario " + username + " ha iniciado seción" + now);
 
         createUser();
 
